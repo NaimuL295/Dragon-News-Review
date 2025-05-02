@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaEye } from 'react-icons/fa';
+import { Link } from 'react-router';
 const NewsCart = ({news}) => {
-    const { title, author, thumbnail_url, details, rating, total_view } = news;
+    const { title, author,id, thumbnail_url, details, rating, total_view } = news;
     return (
     <>
     
@@ -40,7 +41,7 @@ const NewsCart = ({news}) => {
       {/* Details */}
       <p className="text-gray-700 mb-4">
         {details.length > 200 ? details.slice(0, 200) + '...' : details}
-        <span className="text-primary font-semibold ml-2 cursor-pointer">Read More</span>
+        <Link   to={`/news-details/${id}`} className="text-primary font-semibold ml-2 cursor-pointer">Read More</Link>
       </p>
 
       {/* Footer Section */}

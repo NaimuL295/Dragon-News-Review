@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "firebase deploy --project dragon-news-12345": "introduction-1-5ac70",
+    "default": "dragon-news-v1"
+  },
+  "targets": {},
+  "etags": {}
+}
